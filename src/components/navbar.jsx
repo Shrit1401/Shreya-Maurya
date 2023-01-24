@@ -1,7 +1,8 @@
+import { firstName } from "@/data/data";
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [ham, setham] = useState(false);
+  const [ham, setham] = useState(true);
 
   let buttonClicked = () => {
     setham(!ham);
@@ -13,7 +14,7 @@ const Navbar = () => {
       <header
         className={
           ham
-            ? `flex sm:hidden fixed rounded-[150px] items-center w-[90%] justify-around py-[13px] px-[13px] pt-[18px] pb-[18px] transition-all duration-300 ease-in-out  z-[999] mt-3 ml-4 mr-4 bg-white`
+            ? `flex sm:hidden fixed rounded-[150px] items-center w-[90%] justify-around bg-opacity-20 backdrop-blur-3xl py-[13px] px-[13px] pt-[18px] pb-[18px] transition-all duration-300 ease-in-out  z-[999] mt-3 ml-4 mr-4 bg-white`
             : `flex sm:hidden z-[999] fixed rounded-none items-center w-[100%]  transition-all duration-300 ease-in-out justify-around py-[13px] px-[13px] pt-[18px] pb-[18px] bg-[#2A1340]`
         }
       >
@@ -26,12 +27,12 @@ const Navbar = () => {
           <h1
             className={`beatrice text-2xl ${ham ? "text-black" : "text-white"}`}
           >
-            Shreya
+            {firstName}
           </h1>
         </div>
       </header>
-      <nav className="fixed capitalize hidden sm:block pt-10 mb-10  right-[50%] translate-x-[50%] pointer-events-auto z-[9999999999999]	">
-        <ul className="relative text-white  flex justify-between items-center  p-0 rounded-[90px]  bg-white">
+      <nav className="fixed  capitalize hidden sm:block pt-10 mb-10  right-[50%] translate-x-[50%] pointer-events-auto z-[9999999999999]	">
+        <ul className="relative bg-opacity-20 backdrop-blur-3xl text-white  flex justify-between items-center  p-0 rounded-[90px]  bg-white">
           <li>
             <button className="navBtn hover:rounded-r-none">Let's Salut</button>
           </li>
@@ -48,7 +49,7 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`fixed r-0 w-full h-full flex flex-col items-center justify-end z-[600] transition-all duration-300 ease-out ${
+        className={`fixed r-0 sm:hidden w-full h-full flex flex-col items-center justify-end z-[600] transition-all duration-300 ease-out ${
           ham ? "opacity-0" : "opacity-100"
         }`}
       >

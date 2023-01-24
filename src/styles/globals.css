@@ -67,7 +67,7 @@
 }
 
 * {
-  font-family: "Alternate";
+  font-family: "Alternate", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -87,7 +87,11 @@
   }
 
   .navBtn {
-    @apply relative block font-extralight shadow-none text-gray-900 z-[5] border-0 rounded-[90px] pr-[35px] pl-[35px] py-[22.5px] px-[22.5px] hover:bg-yellow-500 text-xl hover:text-white transition-all duration-300 ease-in-out;
+    @apply relative block font-extralight shadow-none text-gray-900 z-[5] border-0 rounded-[90px] pr-[35px] pl-[35px] py-[22.5px] px-[22.5px] hover:bg-purple-900 text-xl hover:text-white transition-all duration-300 ease-in-out;
+  }
+
+  .box {
+    @apply bg-white bg-opacity-50 text-black backdrop-blur-md rounded-lg odd:ml-5 even:mr-5 h-[200px] flex items-center justify-center;
   }
 }
 
@@ -137,4 +141,30 @@
   text-transform: uppercase;
   font-size: 13px;
   color: #fff;
+}
+
+.footer-links {
+  font-family: "Beatrice Display";
+  position: relative;
+  display: block;
+  line-height: 1.2;
+  font-size: clamp(18px, 1.428571428571429vw, 100vw);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-links:hover {
+  background-color: white;
+  opacity: 0.4;
+  color: black;
+}
+
+@layer components {
+  .footer-links {
+    @apply text-white border border-white border-opacity-40;
+  }
 }

@@ -5,7 +5,7 @@ import { work } from "../data/data";
 const Artists = () => {
   return (
     <div>
-      <h1 className="beatrice text-center mt-10 text-white ml-0 sm:ml-5 text-[3rem] sm:text-[10rem] whitespace-nowrap">
+      <h1 className="beatrice text-center mt-10 text-white ml-0 sm:ml-5 text-[3rem] sm:mb-16 mb-0 sm:text-[5rem] whitespace-nowrap">
         Case Studies
       </h1>
 

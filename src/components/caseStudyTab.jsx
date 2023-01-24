@@ -6,7 +6,7 @@ const CaseStudyTab = ({ title, img, desc }) => {
       <div className="art">
         <div className="img overflow-hidden sm:w-[400px] h-[400px]">
           <img
-            className="case-img top-0 left-0 object-cover transition-all duration-300 ease-in-out hover:scale-125sm:w-[400px] h-[400px] rounded-lg"
+            className="case-img top-0 left-0 object-cover transition-all duration-300 ease-in-out hover:scale-125 sm:w-[400px] h-[400px] rounded-lg"
             src={img}
             alt={title}
           />

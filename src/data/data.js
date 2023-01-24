@@ -1,3 +1,9 @@
+export const firstName = "Shreya";
+export const lastName = "Maurya";
+
+export const landingPageDescription =
+  "Embrace your emotions and self-expression by joining us at the show, in the studio, or on your screen.";
+
 export const work = [
   {
     title: "wisa",
