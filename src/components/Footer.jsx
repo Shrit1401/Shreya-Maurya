@@ -19,7 +19,7 @@ const Footer = () => {
             <ul className="text-white list-none items-center text-2xl mt-10 justify-around flex ">
               <li>
                 <div className=" capitalize adiue ">
-                  Made by{" "}
+                  Website by{" "}
                   <a
                     href="https://shrit1401.live"
                     target="_blank"
