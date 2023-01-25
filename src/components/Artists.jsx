@@ -6,7 +6,7 @@ const Artists = () => {
   return (
     <div>
       <h1 className="beatrice text-center mt-10 text-white ml-0 sm:ml-5 text-[3rem] sm:mb-16 mb-0 sm:text-[5rem] whitespace-nowrap">
-        Case Studies
+        Lets Design
       </h1>
 
       <div className="ml-10 mr-10 flex sm:flex-row flex-col  flex-wrap gap-20 justify-around">
