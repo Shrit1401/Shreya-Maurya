@@ -34,16 +34,16 @@ const Navbar = () => {
       <nav className="fixed  capitalize hidden sm:block pt-10 mb-10  right-[50%] translate-x-[50%] pointer-events-auto z-[9999999999999]	">
         <ul className="relative bg-opacity-20 backdrop-blur-3xl text-white  flex justify-between items-center  p-0 rounded-[90px]  bg-white">
           <li>
-            <button className="navBtn hover:rounded-r-none">Let's Salut</button>
+            <button className="navBtn hover:rounded-r-none">Salut</button>
           </li>
           <li>
-            <button className="navBtn hover:rounded-none">Let's Meet</button>
+            <button className="navBtn hover:rounded-none">Me</button>
           </li>
           <li>
-            <button className="navBtn hover:rounded-none">Let's attend</button>
+            <button className="navBtn hover:rounded-none">Designs</button>
           </li>
           <li>
-            <button className="navBtn hover:rounded-l-none">Let's dance</button>
+            <button className="navBtn hover:rounded-l-none">Timeline</button>
           </li>
         </ul>
       </nav>
