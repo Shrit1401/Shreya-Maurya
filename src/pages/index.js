@@ -5,6 +5,8 @@ import Artists from "@/components/Artists";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import { firstName, lastName } from "@/data/data";
+import Tabs from "@/components/Tabs";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <LandingPage />
       <About />
       <Artists />
+      <Tabs />
       <Footer />
     </>
   );

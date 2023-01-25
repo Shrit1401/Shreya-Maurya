@@ -4,12 +4,12 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-yellow-600 hidden sm:flex h-[100vh] w-[100%]  flex-col justify-center mt-28 rounded-t-[80px]">
+      <footer className="bg-[#351a4a] hidden sm:flex h-fit w-[100%] pt-10 pb-20  flex-col justify-center mt-28 rounded-t-[80px]">
         <div className="flex justify-between items-center">
           <div className="relative flex-grow">
             <a
               href="#"
-              className="ml-10 mr-5 flex justify-center text-[#fadd8a]"
+              className="ml-10 mr-5 flex justify-center text-[var(--secondary)]"
             >
               <h1 className=" beatrice text-[12rem]">
                 Shreya <br /> Maurya
@@ -19,7 +19,7 @@ const Footer = () => {
             <ul className="text-white list-none items-center text-2xl mt-10 justify-around flex ">
               <li>
                 <div className=" capitalize adiue ">
-                  Made by{" "}
+                  Website by{" "}
                   <a
                     href="https://shrit1401.live"
                     target="_blank"
@@ -75,16 +75,35 @@ const Footer = () => {
       </footer>
 
       <footer>
-        <div className="flex items-center bg-yellow-600 ml-2 mr-2 sm:hidden h-[55vh] w-[98%]  flex-col justify-center mt-28 rounded-t-[80px]">
+        <div className="flex items-center bg-[#351a4a]  sm:hidden h-[70vh] w-[100%]  flex-col justify-center mt-28 rounded-t-[80px]">
           <div className="relative flex-grow w-full">
             <a
               href="#"
-              className="ml-10 mr-5 flex justify-center text-[#fadd8a]"
+              className="ml-10 mr-5 flex justify-center text-[var(--secondary)]"
             >
               <h1 className="mt-10 beatrice text-[3rem]">
                 {firstName} <br /> {lastName}
               </h1>
             </a>
+
+            <ul className="text-white text-center list-none items-center text-2xl mt-10 justify-around flex ">
+              <li>
+                <div className=" capitalize adiue ">
+                  Made by{" "}
+                  <a
+                    href="https://shrit1401.live"
+                    target="_blank"
+                    className="text-gray-300 adiue hover:opacity-40"
+                  >
+                    Shrit Shrivastva
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="text-gray-300 adiue hover:opacity-40">
+                    The Schyler Initiative
+                  </a>
+                </div>
+              </li>
+            </ul>
 
             <ul className="text-white text-center list-none items-center text-2xl mt-10 flex-col gap-10 w-full justify-around flex ">
               <li>
