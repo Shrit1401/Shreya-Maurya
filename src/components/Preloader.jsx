@@ -12,7 +12,7 @@ const Preloader = () => {
 
     // create a array of words then generate a random word from the array and show the word on words class and then in 2 seconds again generate a random word and show it on words class
 
-    const words = ["Hello", "Hi", "Hey", "Hola", "Bonjour", "Ciao"];
+    const words = ["Hello", "Hola", "Guten Tag", "Bonjour", "Shreya", "Maurya"];
 
     setInterval(() => {
       const randomWord = words[Math.floor(Math.random() * words.length)];
