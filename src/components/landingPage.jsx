@@ -12,14 +12,14 @@ import { Autoplay } from "swiper";
 const LandingPage = () => {
   return (
     <div className="text-white w-[100%] pt-16 pb-0 sm:pb-28" id="home">
-      <div className="gradient-2 absolute w-[450px] h-[450px] opacity-40 sm:opacity-100 top-0 -left-36 " />
-      <div className="gradient-2 absolute w-[450px] h-[450px] opacity-40 sm:opacity-100 top-0 -left-36" />
-      <div className="gradient-2 absolute w-[450px] h-[450px] opacity-40 sm:opacity-100 top-[20%] -left-36" />
-      <div className="gradient-2 absolute w-[450px] h-[450px] opacity-40 sm:opacity-100 top-[40%] -left-36" />
-      <div className="gradient-2 absolute w-[450px] h-[450px] opacity-40 sm:opacity-100 bottom-0 -left-36" />
-      <div className="gradient-3  absolute w-[100px] sm:w-[350px] h-[450px] top-0 right-0 " />
-      <div className="gradient-3  absolute w-[100px] sm:w-[350px] h-[450px] top-[20%] right-0" />
-      <div className="gradient-3  absolute w-[100px] sm:w-[350px] h-[450px] bottom-0 right-0" />
+      <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 top-0 -left-36 " />
+      <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 top-0 -left-36" />
+      <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 top-[20%] -left-36" />
+      <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 top-[40%] -left-36" />
+      <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 bottom-0 -left-36" />
+      <div className="gradient-3  absolute w-[100px] sm:block hidden  sm:w-[350px] h-[450px] top-0 right-0 " />
+      <div className="gradient-3  absolute w-[100px] sm:block hidden  sm:w-[350px] h-[450px] top-[20%] right-0" />
+      <div className="gradient-3  absolute w-[100px] sm:block hidden sm:w-[350px] h-[450px] bottom-0 right-0" />
       <div className="absolute w-[450px] sm:block hidden left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 h-[450px] gradient-1 opacity-50 z-10" />
       <Swiper
         modules={[Autoplay]}

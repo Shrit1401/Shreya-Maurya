@@ -9,7 +9,7 @@ const Artists = () => {
         Let's Design
       </h1>
 
-      <div className="ml-10 mr-10 flex sm:flex-row flex-col  flex-wrap gap-20 justify-around">
+      <div className="ml-10 mr-10 flex sm:flex-row flex-col  justify-center flex-wrap gap-20 sm:justify-around">
         {work.map((item) => (
           <CaseStudyTab
             title={item.title}

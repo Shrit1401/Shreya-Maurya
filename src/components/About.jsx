@@ -2,8 +2,12 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="sm:h-[100vh] h-[50vh] w-[100%]" id="about">
-      <div className="mt-28"></div>
+    <div className="sm:h-[130vh] h-[70vh] w-[100%]" id="about">
+      <div className="mt-28">
+        <h1 className="beatrice text-center mt-10 text-white ml-0 sm:ml-5 text-[3rem] z-[9999999999999999] sm:text-[5rem]">
+          About
+        </h1>
+      </div>
 
       <div className="box w-[100%] h-[50vh] sm:h-[100vh] bg-[url('https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] bg-no-repeat bg-cover bg-blue-400 bg-opacity-60">
         <div className="flex flex-col justify-center items-center h-full  backdrop-blur-md w-full">
