@@ -1,14 +1,15 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 const CaseStudyTab = ({ title, img, desc }) => {
   return (
-    <div className="sm:even:mt-52 cursor-pointer hover:opacity-60 transition-all duration-300 ease-in-out">
-      <div className="absolute w-[450px] hidden h-[450px] gradient-4 pointer-events-none opacity-70 -z-10" />
+    <div className="project sm:even:mt-52 cursor-pointer hover:opacity-60 transition-all duration-300 ease-in-out">
+      <div className="absolute hidden sm:block w-[450px] h-[450px] gradient-4 pointer-events-none opacity-70 -z-10" />
 
-      <div className="art z-[9999]">
-        <div className="img overflow-hidden sm:w-[400px] h-[400px]">
+      <Fade bottom className="art z-[9999]">
+        <div className="img mask relative overflow-hidden sm:w-[400px] h-[400px]">
           <img
-            className="case-img  top-0 left-0 object-cover transition-all duration-300 ease-in-out hover:scale-125 sm:w-[400px] h-[400px] rounded-lg"
+            className="case-img top-0 left-0 overflow-hidden object-cover transition-all duration-300 ease-in-out hover:scale-125 sm:w-[400px] h-[400px] rounded-lg"
             src={img}
             alt={title}
           />
@@ -18,7 +19,7 @@ const CaseStudyTab = ({ title, img, desc }) => {
         </h2>
 
         <p className="text-white text-xl">{desc}</p>
-      </div>
+      </Fade>
     </div>
   );
 };

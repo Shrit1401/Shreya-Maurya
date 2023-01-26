@@ -179,7 +179,7 @@ html {
   }
 
   .land-image {
-    @apply sm:block before:absolute relative w-[420px] sm:h-[420px] h-[500px] sm:top-[20rem] sm:mb-28 mb-0 z-[1] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rounded-[50px] blur-[1.5px] sm:blur-none top-0;
+    @apply sm:block before:absolute  relative w-[420px] sm:h-[420px] h-[500px] sm:top-[20rem] sm:mb-28 mb-0 z-[1] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rounded-[50px] blur-[1.5px] sm:blur-none top-0;
   }
 }
 
@@ -257,4 +257,33 @@ html {
     rgba(7, 152, 190, 1) 100%
   );
   filter: blur(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.project:hover > .gradient-4 {
+  transform: scale(1.5);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.preloader {
+  background: linear-gradient(
+    -45deg,
+    var(--dark),
+    var(--primary),
+    var(--secondary),
+    var(--dark)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
