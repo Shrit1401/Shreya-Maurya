@@ -11,8 +11,6 @@ const Preloader = () => {
       ease: "power4.inOut",
     });
 
-    // create a array of words then generate a random word from the array and show the word on words class and then in 2 seconds again generate a random word and show it on words class
-
     const words = [firstName, lastName];
 
     setInterval(() => {
