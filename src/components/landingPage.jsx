@@ -89,7 +89,10 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="text-white w-[100%] pt-16 pb-0 sm:pb-28" id="home">
+    <div
+      className="text-white w-[100%] sm:h-fit h-[70vh] pt-16 pb-0 sm:pb-28"
+      id="home"
+    >
       <div className="left">
         <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 top-0 -left-36 " />
         <div className="gradient-2 absolute w-[450px] sm:block hidden  h-[450px] opacity-40 sm:opacity-100 top-0 -left-36" />
@@ -102,7 +105,7 @@ const LandingPage = () => {
         <div className="gradient-3  absolute w-[100px] sm:block hidden  sm:w-[350px] h-[450px] top-[20%] right-0" />
         <div className="gradient-3  absolute w-[100px] sm:block hidden sm:w-[350px] h-[450px] bottom-0 right-0" />
       </div>
-      <div className="absolute w-[450px] sm:block hidden left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 h-[450px] gradient-1 opacity-50 z-10" />
+      <div className="absolute w-[350px] sm:block hidden left-[50%] top-[50%] transform -translate-x-1/2 -translate-y-1/2 h-[350px] gradient-1 opacity-50 z-10" />
       <Swiper
         modules={[Autoplay]}
         autoplay={{
@@ -111,7 +114,7 @@ const LandingPage = () => {
         }}
         draggable={true}
         centeredSlides={true}
-        className="mySwiper mb-0 pb-0 h-[30vh] sm:h-[87vh]"
+        className="mySwiper mb-0 pb-0 h-[50vh] sm:h-[87vh]"
       >
         {landingImages.map((item) => (
           <SwiperSlide draggable={true} class="swiper-slide">
@@ -119,11 +122,11 @@ const LandingPage = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div>
-        <h1 className="beatrice text-[4rem] top-32 left-9 sm:text-[11rem] font-light z-[2] absolute ">
+      <div className="sm:block flex justify-center text-center">
+        <h1 className="beatrice text-[4rem] sm:top-32 sm:left-32 sm:text-[7rem] font-light z-[2] absolute ">
           {firstName}
         </h1>
-        <h1 className=" beatrice absolute sm:top-[31.5rem] top-[12rem] z-[2]  right-9 text-[4rem] sm:text-[11rem] font-light text-right">
+        <h1 className=" beatrice absolute sm:top-[29.5rem] z-[2] sm:p-0 p-[70px] sm:right-32 text-[4rem] sm:text-[7rem] font-light text-right">
           {lastName}
         </h1>
       </div>

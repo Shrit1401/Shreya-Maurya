@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import { firstName, lastName } from "@/data/data";
 
 const Preloader = () => {
   useEffect(() => {
@@ -12,7 +13,7 @@ const Preloader = () => {
 
     // create a array of words then generate a random word from the array and show the word on words class and then in 2 seconds again generate a random word and show it on words class
 
-    const words = ["Hello", "Hi", "Hey", "Hola", "Bonjour", "Ciao"];
+    const words = [firstName, lastName];
 
     setInterval(() => {
       const randomWord = words[Math.floor(Math.random() * words.length)];
@@ -22,7 +23,9 @@ const Preloader = () => {
 
   return (
     <div className="overflow-hidden preloader h-full rounded-b-3xl w-full z-[99] bg-[var(--dark)] flex justify-center items-center fixed">
-      <h1 className="text-white words adiue text-3xl sm:text-9xl">Hello</h1>
+      <h1 className="text-white words adiue text-3xl sm:text-9xl">
+        {firstName}
+      </h1>
     </div>
   );
 };
