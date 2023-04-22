@@ -1,6 +1,5 @@
 import {
   firstName,
-  landingImages,
   landingPageDescription,
   lastName,
 } from "@/data/data";
@@ -9,8 +8,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Autoplay } from "swiper";
 import { gsap } from "gsap";
+import { urlFor } from "sanity";
 
-const LandingPage = () => {
+const LandingPage = ({landingImages}) => {
+  console.log(landingImages);
   useEffect(() => {
     gsap.fromTo(
       "#home h1",
@@ -118,7 +119,7 @@ const LandingPage = () => {
       >
         {landingImages.map((item) => (
           <SwiperSlide draggable={true} class="swiper-slide">
-            <img src={item} className="land-image" />
+            <img src={urlFor(item.image)} alt={item.alt} className="land-image" />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -136,5 +137,8 @@ const LandingPage = () => {
     </div>
   );
 };
+
+
+
 
 export default LandingPage;

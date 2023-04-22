@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import CaseStudyTab from "./caseStudyTab";
-import { work } from "../data/data";
 import { gsap } from "gsap";
+import { urlFor } from "sanity";
 
-const Artists = () => {
+const Artists = ({project}) => {
   useEffect(() => {
     gsap.fromTo(
       "#projects h1",
@@ -33,10 +33,10 @@ const Artists = () => {
       </h1>
 
       <div className="ml-10 mr-10 flex sm:flex-row flex-col  justify-center flex-wrap gap-20 sm:justify-around">
-        {work.map((item) => (
+        {project.map((item) => (
           <CaseStudyTab
             title={item.title}
-            img={item.imageUrl}
+            img={urlFor(item.image)}
             desc={item.desc}
             key={item.title}
           />
